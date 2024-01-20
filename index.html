@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components/form.css">
+    <link rel="stylesheet" href="styles/components/button.css">
+</head>
+<body>
+    <main  class="container">
+        <section>
+            <form class="form" action="">
+                <div class="form__container">
+                    <div class="form__field item1">
+                        <label for="firstName">Primer Nombre:</label>
+                        <div class="form__input">
+                            <input type="text" name="firstName" id="firstName" placeholder="Juan Roberto Francisco">
+                            <p data-error style="transform: scale(0);"></p>
+                        </div>
+                    </div>
+                    <div class="form__field item2">
+                        <label for="surname">Primer Apellido:</label>
+                        <div class="form__input">
+                            <input type="text" name="surname" id="surname" required placeholder="Rodríguez Pérez">
+                            <p data-error style="transform: scale(0);"></p>
+                        </div>
+                    </div>
+                    <div class="form__field item3">
+                        <label for="documentType">Tipo de documento</label>
+                        <div class="form__field-radio">
+                            <div>
+                                <input type="radio" name="documentType" id="dni">
+                                <span>DNI</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="documentType" id="cuil">
+                                <span>CUIL</span>
+                            </div>
+                        </div>
+                        <p data-error style="transform: scale(0);"></p>
+                    </div>
+                    <div class="form__field item4">
+                        <label for="docNumber">Número de documento</label>
+                        <div class="form__input">
+                            <input type="text" name="docNumber" id="docNumber">
+                            <p data-error style="transform: scale(0);"></p>
+                        </div>
+                    </div>
+                    <div class="form__field item5">
+                        <label for="address">Dirección:</label>
+                        <div class="form__input">
+                            <input type="text" name="address" id="address">
+                            <p data-error style="transform: scale(0);"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__controls item6">
+                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn" type="reset">Borrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/validations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

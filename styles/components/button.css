@@ -1,0 +1,14 @@
+.btn {
+    background: var(--color-purple400);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--color-indigo100);
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 8px var(--color-purple900);
+    transform: translateY(-4px);
+}
