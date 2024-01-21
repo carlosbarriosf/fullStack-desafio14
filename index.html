@@ -11,20 +11,31 @@
 <body>
     <main  class="container">
         <section>
-            <form class="form" action="">
+            <form class="form" action="" onsubmit="onFormSubmit(event)">
                 <div class="form__container">
                     <div class="form__field item1">
                         <label for="firstName">Primer Nombre:</label>
                         <div class="form__input">
                             <input type="text" name="firstName" id="firstName" placeholder="Juan Roberto Francisco">
                             <p data-error style="transform: scale(0);"></p>
+                            <ul data-info>
+                                <li>De 3 a 10 caracteres alfabéticos por nombre.</li>
+                                <li>La primera letra en mayúsculas o minúsculas.</li>
+                                <li>Las siguientes letras solo en minúsculas.</li>
+                                <li>No añadir espacios al final del último nombre.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="form__field item2">
-                        <label for="surname">Primer Apellido:</label>
+                        <label for="surname">Primer Apellido: *</label>
                         <div class="form__input">
                             <input type="text" name="surname" id="surname" required placeholder="Rodríguez Pérez">
                             <p data-error style="transform: scale(0);"></p>
+                            <ul data-info>
+                                <li>De 2 a 10 caracteres alfabéticos por apellido.</li>
+                                <li>Soporta apóstrofes o comillas simples.</li>
+                                <li>No añadir espacios al final del último apellido.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="form__field item3">
@@ -39,13 +50,15 @@
                                 <span>CUIL</span>
                             </div>
                         </div>
-                        <p data-error style="transform: scale(0);"></p>
                     </div>
                     <div class="form__field item4">
                         <label for="docNumber">Número de documento</label>
                         <div class="form__input">
                             <input type="text" name="docNumber" id="docNumber">
                             <p data-error style="transform: scale(0);"></p>
+                            <ul data-info>
+                                <li>Utilice un formato similar a 12(.)234(.)567 ó 20(-)33444555(-)6.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="form__field item5">
@@ -53,6 +66,10 @@
                         <div class="form__input">
                             <input type="text" name="address" id="address">
                             <p data-error style="transform: scale(0);"></p>
+                            <ul data-info>
+                                <li>De 10 hasta 200 caracteres</li>
+                                <li>Soporta caracteres del tipo: [, ( ) - . ' " ° /]</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

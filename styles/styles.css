@@ -26,12 +26,14 @@
 }
 
 :root {
+    --color-indigo50: #EEF2FF;
     --color-indigo100: #E0E7FF;
     --color-indigo400: #818CF8;
     --color-purple300: #C4B5FD;
     --color-purple400: #A78BFA;
     --color-purple900: #4C1D95;
     --color-error: #EF4444;
+    --color-success: #059669;
 }
 
 body {

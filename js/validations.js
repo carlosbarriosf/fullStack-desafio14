@@ -32,4 +32,4 @@ const addressValidator = (address) => {
 // console.log(nameValidator("carlos fabiAn"))
 // console.log(upToThreeNamesValidator(""))
 // console.log(surnameValidator(""))
-console.log(addressValidator("asd"))
+// console.log(addressValidator("asd"))

@@ -23,6 +23,7 @@
 }
 
 .form__input {
+    /* position: relative; */
     width: 100%;
 }
 
@@ -39,6 +40,27 @@
 .form__input input[type = text]:focus {
     outline: none;
     border-color: var(--color-purple900);
+}
+
+ul[data-info] {
+    list-style: none;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 6px;   
+    background-color: var(--color-purple400);
+    color: var(--color-indigo50);
+    position: absolute;
+    z-index: 999;
+    width: 180px;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.4s;
+    text-align: start;
+    box-shadow: 2px 2px 8px var(--color-purple900);
+}
+
+ul[data-info] li {
+    padding: 0;
 }
 
 .item3 {
@@ -93,6 +115,9 @@ p[data-error] {
     p[data-error] {
         text-align: end;
     }
+    ul[data-info] {
+        width: 250px;
+    }
 }
 
 /* lg */
@@ -114,6 +139,9 @@ p[data-error] {
     }
     .form__input input {
         width: 100%;
+    }
+    .item3 {
+        gap: 0.8rem;
     }
     .item5 {
         /* flex-direction: column; */
