@@ -28,8 +28,3 @@ const addressValidator = (address) => {
     return newRegExp.test(address);
 }
 
-
-// console.log(nameValidator("carlos fabiAn"))
-// console.log(upToThreeNamesValidator(""))
-// console.log(surnameValidator(""))
-// console.log(addressValidator("asd"))

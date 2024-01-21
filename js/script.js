@@ -75,6 +75,17 @@ surname.addEventListener('blur', (e) => {
 surname.addEventListener('mouseover', showInfo)
 surname.addEventListener('mouseout', hideInfo)
 
+function handleDocumentTypeChange () {
+    docNumber.value = "";
+    docNumber.style = 'border-color: var(--color-purple300);';
+    const error = docNumber.parentElement.querySelector('[data-error]');
+    error.style = 'transform: scale(0);'
+    error.innerHTML = "";
+}
+
+dni.addEventListener('change', handleDocumentTypeChange)
+cuil.addEventListener('change', handleDocumentTypeChange)
+
 docNumber.addEventListener('blur', (e) => {
     if(dni.checked) {
         if(!dniValidator(docNumber.value)) {
